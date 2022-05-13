@@ -1,52 +1,66 @@
-*{padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --branco-principal: #FFFFFF;
     --preto-principal: #000000;
+    --laranja-principal:#e27628;
+    --cinza-principal:#C0C0C0;
+    --azul-principal:#0c303f;
+    --azul-secundario:#2498c0;
     --gradiente-principal: linear-gradient(45deg, #c2e59c, #64b3f4);
-    --teste--background1: #ffff00;
+    --gradiente-secundario: linear-gradient(135deg, #64b3f4, #c2e59c );
+    --teste-background1: #ffff00;
+    --fonte-principal: 'Inter';
+}
 
-
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
 }
 
 /* Cabeçalho */
 
 .menu {
-    background-color: var(--teste--background1);
+    background: var(--gradiente-principal);
     display: flex;
     align-items: center;
-    height: 20vh;
+    justify-content: space-evenly;
+    height: 20%;
+    width: 100%;    
+    position: fixed;
+    top:0;
+    left:0;
 }
+
 .menu__logo {
-    width: 10%;
+    width: 30%;
 }
 
 .menu__lista{
     list-style: none;
     font-size: 17px;
-    
 }
 
 .lista__item{
     display: inline-block;
     margin: 0 1em;
-
 }
 
 .lista__item a{
     text-decoration: none;
+    color: var(--azul-principal);
 }
 
-body {
-    background: var(--gradiente-principal);
+.lista__item a:hover{
+    color: var(--laranja-principal);
+    font-weight: 700;
 }
+
 
 /* Seção Principal */
 .container {
-    height: 80vh;
+    background: var(--gradiente-principal);
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -56,9 +70,36 @@ body {
 }
 
 .principal__conteudo {
-    margin: 0 2em;
-    background: var(--teste--background1);
-    
+    margin: 0 auto;
+}
+
+.principal__titulo{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:var(--azul-principal);
+    margin-bottom: 1em;
+}
+
+.principal__descricao{
+    margin: 1em 0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.principal__botao{
+    margin: 10px 0 ;
+    padding: 10px;
+    border: none;
+    background-color: var(--laranja-principal);
+    color:var(--branco-principal);
+    border-radius: 5px;
+}
+
+.principal__botao:hover{
+    box-shadow: 1px 1px 1px var(--laranja-principal);
+    background-color: var(--azul-principal);
+    cursor: pointer;
 }
 
 .caixa__imagem {
