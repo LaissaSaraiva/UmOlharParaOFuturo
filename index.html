@@ -9,16 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a7e2bd8b8b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
-            <a href="#"> <img src="./img/Logo-UOPF.png" alt="Logo do Projeto" class="menu__logo"></a>
+            <div>
+                <a href="#"><img src="./img/Logo-UOPF.png" alt="Logo do Projeto" class="menu__logo"></a>
+            </div>
+            
             <ul class="menu__lista">
                 <li class="lista__item"><a href="#">Home</a></li>
-                <li class="lista__item"><a href="">Quem Somos</a></li>
+                <li class="lista__item"><a href="#">Quem Somos</a></li>
                 <li class="lista__item"><a href="#">Ações</a></li>
-                <li class="lista__item"><a href="">Contatos</a></li>
+                <li class="lista__item"><a href="#rodape">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -34,6 +38,24 @@
             </div>
         </section>
     </main>
+    <footer  id="rodape" class="rodape">
+        <div class="rodape__redes-sociais">
+            <ul class="lista__redes-sociais">
+                <li class="rodape__item">
+                    <a target="_blank" href="https://www.facebook.com/umolharparaofuturo1"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+
+                <li class="rodape__item">
+                    <a target="_blank" href="https://www.instagram.com/umolharparaofuturo/"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+
+                <li class="rodape__item">
+                    <a target="_blank" href="mailto:contato.umolharparaofuturo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </li>
+            </ul>        
+        </div>
+        <p class="rodape__copyright">&copy; Um Olhar Para o Futuro - 2022</p>
+    </footer>
 
 </body>
 </html>
