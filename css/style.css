@@ -1,0 +1,125 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --preto-principal: #000000;
+    --laranja-principal:#e27628;
+    --cinza-principal:#C0C0C0;
+    --azul-principal:#0c303f;
+    --azul-secundario:#2498c0;
+    --verde-principal: #c2e59c;
+    --gradiente-principal: linear-gradient(45deg, #c2e59c, #64b3f4);
+    --gradiente-secundario: linear-gradient(135deg,#64b3f4, #c2e59c);
+    /* --gradiente-secundario: linear-gradient(45deg, #64b3f4, #c2e59c); */
+    --gradiente-menu:linear-gradient(315deg, #c2e59c, #FFFFFF, #c2e59c);
+    --gradiente-transicao:linear-gradient(315deg, #64b3f4, #c2e59c, #FFFFFF, #c2e59c);
+    --gradiente-transicao2:linear-gradient(90deg,  #c2e59c, #FFFFFF,#c2e59c,#92c8d8,#FFFFFF);
+
+    --fonte-principal: 'Inter';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color:var(--azul-principal);
+}
+
+
+
+.container {
+    height: 120vh;
+    background: var(--gradiente-transicao);
+}
+
+
+
+/* Cabeçalho */
+
+.menu {
+    background: var(--gradiente-menu);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 0 30px;
+        
+    position: fixed;
+    top:0;
+    left:0;
+    box-shadow: 0px 4px 4px rgba(15, 42, 117, 0.16);
+}
+
+.menu__logo {
+    display: inline;
+    width: 150px;
+}
+
+.menu__lista{
+    list-style: none;
+    font-size: 17px;
+}
+
+.lista__item{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.lista__item a{
+    text-decoration: none;
+    color: var(--azul-principal);
+}
+
+.lista__item a:hover{
+    color: var(--laranja-principal);
+    font-weight: bold;
+}
+
+
+/* Rodapé */
+
+.rodape {
+    background-color: var(--azul-principal);
+    color:var(--cinza-principal);
+    box-shadow: -4px -4px 6px rgb(20, 177, 111) ;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lista__redes-sociais {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape__item {
+    margin: 10px;
+}
+
+.rodape__item a {
+  text-decoration: none;
+}
+
+.rodape__item i {
+    font-size: 1.5em;
+    color:var(--branco-principal);
+}
+
+.rodape__item i:hover{
+    color:var(--laranja-principal);
+    font-size: 1.7em; 
+}
+
+.rodape__copyright{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 10px 0;
+    color: var(--cinza-principal);
+}
+
+

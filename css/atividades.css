@@ -1,0 +1,59 @@
+
+
+/* Atividades */
+.atividades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    height: 80vh;
+}
+
+.atividades__lista{
+    background: rgba(255, 255, 255, 0.6);
+    max-width: 300px;
+    margin: auto;
+    padding: 25px 25px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.atividades__lista li {
+    margin-top:13px;
+}
+
+.atividades__slider {
+    width: 427px;
+    height: 320px;
+    overflow: hidden;
+    border: 5px solid var(--laranja-principal);   
+    border-radius: 10px;
+}
+
+.atividades__slider .caixa__fotos {
+    width: 500%;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+.atividades__slider .caixa__fotos img {
+    width: 20%;
+}
+
+
+@keyframes animacao {
+    0%  { margin-left:  0;}
+    20% { margin-left:  0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    95% { margin-left: -300%;}
+    100% { margin-left: -400%;}
+
+}

@@ -1,0 +1,76 @@
+
+/* Seção Quem SomoS */
+
+.quem-somos{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: var(--gradiente-menu);
+
+}
+
+/* .transicao {
+
+} */
+
+.caixa__subtitulo {
+    width: 100%;
+}
+
+.subtitulo {
+   text-align: center;
+   font-weight: 700;
+   font-size: 30px;
+}
+
+.caixa__imagem{
+    margin: auto;
+    width: 35%;  
+}
+
+.quem-somos__imagem{
+    width: 100%;
+    border-radius: 40px 0 40px 0;
+    transition: 500ms;
+}
+
+.quem-somos__imagem:hover{
+    width: 103%;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 5px 5px 1px rgb(227 108 12 / 50%);
+}
+
+.quem-somos__conteudo {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.6);
+    max-width: 550px;
+    margin: auto;
+    padding: 25px 25px;
+    border-radius: 10px;
+}
+
+.quem-somos__conteudo:hover{
+    box-shadow: 5px 5px 1px rgb(12 48 63 / 50%);
+}
+
+.quem-somos__item {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.quem-somos__descricao {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.quem-somos__citaçao{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.quem-somos__citaçao q {
+    font-style: italic;
+}
