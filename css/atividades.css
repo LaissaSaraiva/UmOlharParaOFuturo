@@ -6,9 +6,13 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    box-sizing: border-box;
-    height: 80vh;
+    gap: 20px;
+    
 }
+
+/* .atividades__subtitulo {
+    width: 100%;
+}   */
 
 .atividades__lista{
     background: rgba(255, 255, 255, 0.6);
@@ -25,23 +29,26 @@
 }
 
 .atividades__slider {
-    width: 427px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
-    border: 5px solid var(--laranja-principal);   
-    border-radius: 10px;
+    border-radius: 100px;
+    
 }
 
 .atividades__slider .caixa__fotos {
     width: 500%;
     animation: animacao;
-    animation-duration: 20s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 
 
 .atividades__slider .caixa__fotos img {
-    width: 20%;
+    width: 19.99%;
+    border-radius: 10px;
+    align-items: center;
+   
 }
 
 

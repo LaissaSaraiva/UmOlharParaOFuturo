@@ -9,7 +9,7 @@
     --gradiente-principal: linear-gradient(45deg, #c2e59c, #64b3f4);
     --gradiente-secundario: linear-gradient(135deg,#64b3f4, #c2e59c);
     /* --gradiente-secundario: linear-gradient(45deg, #64b3f4, #c2e59c); */
-    --gradiente-menu:linear-gradient(315deg, #c2e59c, #FFFFFF, #c2e59c);
+    --gradiente-menu:linear-gradient(315deg, #c2e59c, #e4fffe, #c2e59c);
     --gradiente-transicao:linear-gradient(315deg, #64b3f4, #c2e59c, #FFFFFF, #c2e59c);
     --gradiente-transicao2:linear-gradient(90deg,  #c2e59c, #FFFFFF,#c2e59c,#92c8d8,#FFFFFF);
 
@@ -24,25 +24,24 @@
     color:var(--azul-principal);
 }
 
-
-
 .container {
-    height: 120vh;
     background: var(--gradiente-transicao);
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+    
+   
 }
 
-
-
 /* Cabeçalho */
-
 .menu {
-    background: var(--gradiente-menu);
+      background: var(--gradiente-menu);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20%;
+    height: 20vh;
     width: 100%;
-
+  
     box-sizing: border-box;
     padding: 0 30px;
         
@@ -59,17 +58,16 @@
 
 .menu__lista{
     list-style: none;
-    font-size: 17px;
 }
 
 .lista__item{
     display: inline-block;
-    margin: 0 1em;
 }
 
 .lista__item a{
     text-decoration: none;
     color: var(--azul-principal);
+    padding: 15px;
 }
 
 .lista__item a:hover{
@@ -85,9 +83,12 @@
     color:var(--cinza-principal);
     box-shadow: -4px -4px 6px rgb(20, 177, 111) ;
     height: 12vh;
+    width: 120%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .lista__redes-sociais {

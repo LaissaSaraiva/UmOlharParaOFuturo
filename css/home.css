@@ -4,23 +4,23 @@
 .principal {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
     background: var(--gradiente-menu);
+    height: 90vh;
+    width: 100%;
 }
 
 
 .principal__conteudo {
-    display: inline-block;
-    margin: 0 auto;
+    min-width: 300px;
     padding: 30px;
 }
 
 .principal__titulo{
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     text-transform: uppercase;
     color:var(--azul-principal);
     margin-bottom: 1em;
@@ -47,10 +47,24 @@
     cursor: pointer;
 }
 
-.caixa__imagem {
-    width: 50%;
+.principal__imagem {
+    max-width: 400px;
+    align-self: center;
 }
 
-.principal__imagem {
-    width: 100%;
+@media screen and (max-width: 768px) {
+
+    .principal__conteudo{
+        width:50%;
+    }
+    .principal__imagem {
+        min-width: 150px;
+    }
+
 }
+
+@media screen and (max-width: 425px) {
+    .principal{
+        flex-direction: column;
+    }
+} 
