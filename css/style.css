@@ -59,11 +59,12 @@
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .lista__item{
-    display: inline;
+    display: inline-block;
+    margin: 0 10px;
 
 }
 
