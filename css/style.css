@@ -33,10 +33,11 @@
 
 /* Cabeçalho */
 .menu {
-      background: var(--gradiente-menu);
+    background: var(--gradiente-menu);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     height: 20vh;
     width: 100%;
   
@@ -56,6 +57,9 @@
 
 .menu__lista{
     list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
 }
 
 .lista__item{
@@ -121,4 +125,11 @@
     color: var(--cinza-principal);
 }
 
+@media screen and (max-width: 425px) {
+
+    .menu {
+        position: static;
+    }
+    
+}
 
