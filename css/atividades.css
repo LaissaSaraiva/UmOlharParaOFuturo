@@ -47,7 +47,7 @@
 .atividades__slider .caixa__fotos {
     width: 500%;
     animation: animacao;
-    animation-duration: 25s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
