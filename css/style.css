@@ -27,10 +27,8 @@
 .container {
     background: var(--gradiente-transicao);
     padding: 30px;
-    width: 100%;
-    margin: 0 auto;
-    
-   
+    width: 100%;  
+    box-sizing: border-box; 
 }
 
 /* Cabeçalho */

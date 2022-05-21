@@ -34,7 +34,6 @@
 
 .principal__botao{
     margin: 10px 0 ;
-    padding: 10px;
     border: none;
     background-color: var(--laranja-principal);
     color:var(--branco-principal);
@@ -54,9 +53,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .principal__conteudo{
-        width:50%;
-    }
+
     .principal__imagem {
         min-width: 150px;
     }
@@ -66,5 +63,10 @@
 @media screen and (max-width: 425px) {
     .principal{
         flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .principal__conteudo{
+        width: 100px;
     }
 } 

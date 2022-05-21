@@ -64,3 +64,27 @@
     100% { margin-left: -400%;}
 
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .atividades {
+        
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .principal{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .principal__conteudo{
+        width: 100px;
+        background-color: aquamarine;
+    }
+} 
