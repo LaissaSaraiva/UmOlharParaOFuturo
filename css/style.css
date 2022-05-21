@@ -59,17 +59,18 @@
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    column-gap: 10px;
+    justify-content: space-between;
 }
 
 .lista__item{
-    display: inline-block;
+    display: inline;
+
 }
 
 .lista__item a{
     text-decoration: none;
     color: var(--azul-principal);
-    padding: 15px;
+    padding: 5px;
 }
 
 .lista__item a:hover{
@@ -129,6 +130,10 @@
 
     .menu {
         position: static;
+    }
+    
+    .menu__logo {
+        width: 120px;
     }
     
 }

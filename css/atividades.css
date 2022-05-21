@@ -28,12 +28,20 @@
     margin-top:13px;
 }
 
+.atividades__lista:hover{
+    box-shadow: 5px 5px 1px rgb(12 48 63 / 50%);
+}
+
 .atividades__slider {
     width: 300px;
     height: 300px;
     overflow: hidden;
     border-radius: 100px;
-    
+}
+
+.atividades__slider:hover{
+    width: 302px;
+    box-shadow: 5px 5px 1px rgb(227 108 12 / 50%);
 }
 
 .atividades__slider .caixa__fotos {
