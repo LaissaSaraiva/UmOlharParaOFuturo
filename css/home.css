@@ -8,7 +8,7 @@
     text-align: center;
     justify-content: space-evenly;
     background: var(--gradiente-menu);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -38,6 +38,7 @@
     background-color: var(--laranja-principal);
     color:var(--branco-principal);
     border-radius: 5px;
+    padding: 10px;
 }
 
 .principal__botao:hover{
@@ -53,7 +54,6 @@
 
 @media screen and (max-width: 768px) {
 
-
     .principal__imagem {
         min-width: 150px;
     }
@@ -62,8 +62,12 @@
 
 @media screen and (max-width: 425px) {
     .principal{
+        box-sizing: border-box;
         flex-direction: column;
-        margin-top: 100px;
+        height: 130vh ;
+        padding: 0px;
+        justify-content: flex-end;
+        
     }
 
     .principal__conteudo{
